@@ -3,11 +3,11 @@
 using namespace std;
 
 int main() {
-  int n,s,b,a = 0,b1 = 0;
+  int n,s,b,a = 1,b1 = 0;
   cin>>n;
   for(int i=0;i<n;i++){
     cin>>s>>b;
-    a+=s;
+    a*=s;
     b1+=b;
   }
   cout<<abs(a-b1);
