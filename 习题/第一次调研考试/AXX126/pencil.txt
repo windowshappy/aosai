@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstdio>
+using namespace std;
+int main()
+{
+	freopen("*.pencil","in",stdin);
+	freopen("*.pencil","out",stdout);
+	int n,s1,s2,s3,s4,s5,s6,s7,s8,s9;
+	cin>>n>>s1>>s2>>s3>>s4>>s5>>s6;
+	n,s1,s2,s3,s4,s5,s6<10000;
+	s7=(n%s1+n)/s1*s2;
+	s8=(n%s3+n)/s3*s4;
+	s9=(n%s5+n)/s5*s6;
+	if((s7>s8)&&(s7>s9))
+	cout<<s7;
+	if((s8>s7)&&(s8>s9))
+	cout<<s8;
+	if((s9>s8)&&(s9>s7))
+	cout<<s9<<endl;
+	fclose(stdin);
+	fclose(stdout);
+	return 0;
+}

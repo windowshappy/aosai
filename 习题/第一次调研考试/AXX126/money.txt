@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cstdio>
+using namespace std;
+int main()
+{
+	freopen("*.money","in",stdin);
+	freopen("*.money","out",stdout);
+	int x;
+	cin>>x;
+	if(x<=150)cout<<0.4463*x;
+	if((x>=151)&&(x<=400))cout<<0.4663*x;
+	if(x>=401)cout<<0.5663*x<<endl;
+	("Area=.1,",&x);
+	fclose(stdin);
+	fclose(stdout);
+	return 0; 
+}
