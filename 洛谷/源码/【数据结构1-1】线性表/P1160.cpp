@@ -2,6 +2,7 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 /*
 ins_back(x,y) ：将元素 y 插入到 x 后面；
 ins_front(x,y) ：将元素 y 插入到 x 前面；
@@ -93,5 +94,20 @@ int main() {
     if(t.index[x]) t.del(x);
   }
   t.print();
+=======
+int main() {
+  queue<int> q;
+  int n,m,i;
+  cin>>n>>m;
+  for(i=1;i<=n;i++) q.push(i);
+  while(q.size() >= 1) {
+    for(i=1;i<m;i++) {
+      q.push(q.front());
+      q.pop();
+    }
+    printf("%d ",q.front());
+    q.pop();
+  }
+>>>>>>> 2e86e68162f696cc2b4243b5ed59385dc5a697a4
   return 0;
 }
