@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-  int m,n,t, t1 = 0;
+  unsigned int m;int n,t, t1 = 0;
   bool h[1111] = {0};
   queue<int> w;
   cin>>m>>n;
