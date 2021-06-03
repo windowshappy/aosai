@@ -16,7 +16,7 @@ int main() {
         o[i] = o[st.top()] = true;
         st.pop();
       }
-    }
+  }
     else if(s[i]==']'){
       if (st.empty()) {
         continue;
