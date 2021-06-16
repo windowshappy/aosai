@@ -5,7 +5,7 @@
 
 using namespace std;
 
-/*
+/*d
 夏天到了， 各家各户的用电量都增加了许多， 相应的电费也交的
 更多了。 小玉家今天收到了一份电费通知单。 小玉看到上面写： 据闽
 价电[2006]27 号规定， 月用电量在 150 千瓦时及以下部分按每千瓦
@@ -23,11 +23,11 @@ using namespace std;
 输入输出样例
 输入样例#1： 267
 输出样例#1： 121.5
-*/ 
+*/
 
 int main(){
-	freopen("money.in", "r", stdin);
-	freopen("money.out", "w", stdout);
+	// freopen("money.in", "r", stdin);
+	// freopen("money.out", "w", stdout);
 	int a;
 	double money;
 	cin>>a;
@@ -41,8 +41,7 @@ int main(){
 		money=(a-150-(a-400))*0.4663+150*0.4463+(a-400)*0.5663;
 	}
 	printf("%.1lf", money);
-	fclose(stdin);
-	fclose(stdout);
+	// fclose(stdin);
+	// fclose(stdout);
 	return 0;
 }
-
