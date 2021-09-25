@@ -130,13 +130,13 @@ namespace BigInt {
           }
     };
 
-    ostream& operator<<(ostream &out,const Bigint& x)   //重载一下输出
+    ostream& operator<<(ostream &out,const Bigint& x)
     {
         for(int i=max(x.len-1, 0);i>=0;--i)
             cout<<x.a[i];
         return out;
     }
-    istream& operator>>(istream &in,Bigint &x)       //重载一下输入
+    istream& operator>>(istream &in,Bigint &x) 
     {
         char num[9999];
         in>>num;

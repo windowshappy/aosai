@@ -4,17 +4,17 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++/mingw32"
+                "C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/**",
+                "C:/Program Files/Dev-Cpp/MinGW32/include/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "C:\\Program Files\\Dev-Cpp\\MinGW32\\bin\\gcc.exe",
-            "cStandard": "c89",
-            "cppStandard": "gnu++98",
-            "intelliSenseMode": "windows-gcc-x86"
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
         }
     ],
     "version": 4

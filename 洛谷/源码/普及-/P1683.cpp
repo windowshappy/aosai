@@ -7,7 +7,7 @@ char r[1000][21];
 int main()
 {
 	int w,h, target[2];
-	cin>>w>>>h;
+	cin>>w>>h;
 	for (int i = 0; i < w; ++i)
 	{
 		for (int j = 0; j < h; ++j)
