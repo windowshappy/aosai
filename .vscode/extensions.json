@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "ms-ceintl.vscode-language-pack-zh-hans",
+        "austin.code-gnu-global",
+        "vscode-icons-team.vscode-icons",
+        "2gua.rainbow-brackets",
+        "ms-vscode.cpptools-themes",
+        "ms-python.python",
+        "formulahendry.code-runner"
+    ]
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Luogu Academic &amp; 洛谷官方核心用户群 - 洛谷</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="csrf-token" content="1631879789:nzhpM4vSAkK1LcNqQqhzERf+YkClGgUkMcqXO7k9cbU=">
+<meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'unsafe-eval' luogu.com.cn *.luogu.com.cn luogu.org *.luogu.org *.cnzz.com luoguprivate.oss-cn-hangzhou.aliyuncs.com luogu.oss-cn-hangzhou.aliyuncs.com wss: blob:; img-src * data:; font-src * data:; frame-src https://player.bilibili.com https://www.bilibili.com">
+<link rel="stylesheet" href="https://cdn.luogu.com.cn/css/amazeui.min.css"/>
+<link rel="stylesheet" href="https://cdn.luogu.com.cn/css/katex.min.css"/>
+<link rel="stylesheet" href="https://cdn.luogu.com.cn/css/luogu3.css?ver=20190102">
+<link rel="stylesheet" href="https://cdn.luogu.com.cn/css/highlight_tomorrow.css">
+<link rel="stylesheet" href="https://cdn.luogu.com.cn/markdown-palettes/markdown-palettes.css?ver=20190219">
+<script src="https://cdn.luogu.com.cn/js/jquery-2.1.1.min.js"></script>
+<script src="https://cdn.luogu.com.cn/js/luogu3_pre.js?ver=20190101"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen"/>
+<link rel="stylesheet" href="https://cdn.luogu.com.cn/fe/loader.css?ver=20210916">
+<script>window._feInjection = JSON.parse(decodeURIComponent("%7B%22code%22%3A200%2C%22currentUser%22%3Anull%2C%22currentTemplate%22%3A%22Excited%22%2C%22currentData%22%3A%7B%22shortHeader%22%3Afalse%2C%22pageName%22%3A%22%5Cu8ba8%5Cu8bba%5Cu8be6%5Cu60c5%22%2C%22title%22%3A%22Luogu%20Academic%20%26%20%5Cu6d1b%5Cu8c37%5Cu5b98%5Cu65b9%5Cu6838%5Cu5fc3%5Cu7528%5Cu6237%5Cu7fa4%22%7D%7D"));window._feConfigVersion=1631777019;window._tagVersion=1631788966;</script>
+<script>window._release = '20210916';</script>
+<script src="https://cdn.luogu.com.cn/fe/loader.js?ver=20210916" charset="utf-8" defer></script>
+</head>
+<body>
+<div id="app"></div>
+<script>
+    function scrollToId (id) {
+        $('html, body').animate({
+            scrollTop: ($('#' + id).offset().top)
+        }, 500);
+    }
+</script>
+<style>
+    .lg-toolbar {
+        display: none;
+    }
+
+    #app-old{
+        display: block;
+        margin-bottom: 2em;
+        /* position: relative;*/
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    code {
+        font-family: monospace, "Courier New";
+    }
+
+</style>
+<div id="app-old">
+<div class="lg-toolbar" data-am-sticky>
+<h1>Luogu Academic &amp; 洛谷官方核心用户群</h1>
+</div>
+<div class="am-g lg-main-content">
+<div class="am-u-md-4 lg-right">
+<section class="am-panel am-panel-default lg-summary">
+<div class="lg-summary-content">
+<ul class="am-list am-list-static lg-summary-list">
+<li><strong>版块</strong><span class="lg-right"><a class='colored' href="/discuss/lists?forumname=academics" target="_blank">学术版</a></span></li>
+<li><strong>楼主</strong><span class="lg-right"><a class='lg-fg-purple lg-bold' href="/user/20218" target="_blank">zhouwc</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#3498db" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>&nbsp;<span class="am-badge am-radius lg-bg-purple">legends</span></span></li>
+<li><strong>发帖时间</strong><span class="lg-right">2020-07-07 09:53</span></li>
+</ul>
+</div>
+<p>
+<a class="am-btn am-btn-primary am-btn-sm" href="javascript: scrollToId('replyarea')">回复帖子</a>
+<button class="am-btn am-btn-danger am-btn-sm" name="report" data-report-type="post" data-report-id="235883">
+举报
+</button>
+</p>
+</section>
+</div>
+<div class="am-u-md-8 lg-right">
+<div class="lg-content-left">
+<article class="am-comment am-comment-danger" data-reply-count="671">
+<div class="lg-left"><a href="/user/20218" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/20218.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-purple lg-bold' href="/user/20218" target="_blank">zhouwc</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#3498db" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>&nbsp;<span class="am-badge am-radius lg-bg-purple">legends</span>
+2020-07-07 09:53
+<a data-fd-username="zhouwc" href="javascript: scrollToId('replyarea')">回复</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>Luogu Academic &amp; 洛谷官方核心用户群 745848871</p>
+<p>仅限蓝金钩加入。会使用 bot 进行验证。其作用如下：</p>
+<ol>
+<li>有了一定的入群门槛，至少在学术上达到一定的水平；</li>
+<li>试图增加学术性的讨论，减少xxs的存在；</li>
+<li>管理员会比较重视本群中用户的反馈；</li>
+<li>允许就某些洛谷的站务事项进行表决。</li>
+</ol>
+<p>欢迎满足条件的小伙伴加入！</p>
+<p>请在自己的洛谷个人介绍中的【顶格开头】写上自己的 QQ 号进行验证。QQ 号前不能任何其它字符。</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/279700" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/279700.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-red lg-bold' href="/user/279700" target="_blank">天机星</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:54
+<a data-fd-username="天机星" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146079">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>qp</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/231147" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/231147.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-bluelight' href="/user/231147" target="_blank">tangrunxi</a>
+2020-07-07 09:54
+<a data-fd-username="tangrunxi" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146082">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>qp</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/210890" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/210890.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-gray' href="/user/210890" target="_blank">_SAR_</a>
+2020-07-07 09:54
+<a data-fd-username="_SAR_" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146083">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>qp</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/298325" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/298325.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-green' href="/user/298325" target="_blank">Tanjiro</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:54
+<a data-fd-username="Tanjiro" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146084">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>qp</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/298325" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/298325.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-green' href="/user/298325" target="_blank">Tanjiro</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:54
+<a data-fd-username="Tanjiro" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146085">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>哇，好靠前</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/184500" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/184500.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-green' href="/user/184500" target="_blank">hаnzhongtlx</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:54
+<a data-fd-username="hаnzhongtlx" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146086">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>ｑｐ</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/60075" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/60075.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-red lg-bold' href="/user/60075" target="_blank">pzc2004</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#3498db" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:54
+<a data-fd-username="pzc2004" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146087">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>qp</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/178294" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/178294.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-orange lg-bold' href="/user/178294" target="_blank">zhy137036</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#3498db" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:55
+<a data-fd-username="zhy137036" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146089">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>qp</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/125210" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/125210.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-green' href="/user/125210" target="_blank">ForkΨKillet</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:55
+<a data-fd-username="ForkΨKillet" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146090">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>qp</p>
+</div>
+</div>
+</article>
+<article class="am-comment am-comment-primary">
+<div class="lg-left"><a href="/user/122461" class="center">
+<img src="https://cdn.luogu.com.cn/upload/usericon/122461.png" class="am-comment-avatar"/>
+</a></div>
+<div class="am-comment-main">
+<header class="am-comment-hd">
+<div class="am-comment-meta"> <span style="margin-right: 3px">@</span><a class='lg-fg-red lg-bold' href="/user/122461" target="_blank">rui_er</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#3498db" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>
+2020-07-07 09:55
+<a data-fd-username="rui_er" href="javascript: scrollToId('replyarea')">回复</a>
+<a style="cursor:pointer" name="report" data-report-type="post_reply" data-report-id="2146091">
+举报
+</a>
+</div>
+</header>
+<div class="am-comment-bd">
+<p>zwc！</p>
+</div>
+</div>
+</article>
+<div class="pagination-centered"><ul class="am-pagination am-pagination-centered"><li class="am-active"><a>1</a></li><li><a href="/discuss/235883?page=2" data-ci-pagination-page="2">2</a></li><li><a href="/discuss/235883?page=3" data-ci-pagination-page="3">3</a></li><li><a href="/discuss/235883?page=4" data-ci-pagination-page="4">4</a></li><li><a href="/discuss/235883?page=5" data-ci-pagination-page="5">5</a></li><li><a href="/discuss/235883?page=6" data-ci-pagination-page="6">6</a></li><li><a href="/discuss/235883?page=2" data-ci-pagination-page="2" rel="next">&gt;</a></li><li><a href="/discuss/235883?page=68" data-ci-pagination-page="68">&raquo;</a></li></ul></div>
+</div>
+</div>
+</div>
+<div class="am-modal am-modal-prompt" tabindex="-1" id="report">
+<div class="am-modal-dialog">
+<div class="am-modal-hd">反馈</div>
+<div class="am-modal-bd">
+如果你认为某个帖子有问题，欢迎向洛谷反馈，以帮助更多的同学。
+<br><br>
+<select data-am-selected="{ btnStyle: 'secondary'}" name="reason">
+<option value="不友善内容">辱骂与不友善内容</option>
+<option value="无意义内容">无法令人理解的无意义内容</option>
+<option value="违法内容">违法内容与有害信息</option>
+<option value="其他">其他原因（请解释）</option>
+</select><br><br>
+请具体说明理由，以增加反馈的可信度。
+<input type="text" class="am-modal-prompt-input" name="content">
+</div>
+<div class="am-modal-footer">
+<span class="am-modal-btn" data-am-modal-cancel>取消</span>
+<span class="am-modal-btn" data-am-modal-confirm>确定</span>
+</div>
+</div>
+</div>
+<script>
+    var markdownPalettes = null;
+    function getEditorVal() {
+        if(markdownPalettes)
+            return markdownPalettes.content;
+        else
+            return $("#editor").val();
+    }
+
+    function setEditorVal(code) {
+        if(markdownPalettes)
+            markdownPalettes.content = code;
+        else
+            $("#editor").val(code);
+    }
+
+    $(document).ready(function() {
+        if ($("#editor-new").length > 0)
+            markdownPalettes = new MarkdownPalettes("#editor-new");
+        else if ($(".editor-wrap").length === 0)
+            $("#editor").markDownEditor({});
+    });
+
+    $("#submit-reply").click(function () {
+        $(this).addClass("am-disabled").val("提交中");
+
+        var content, verify;
+        var postID = $("#submit-reply").attr("data-postid");
+        content = getEditorVal();
+        captcha = $("[name=captcha]").val();
+        $.post("/api/discuss/reply/" + postID, {
+            content: content,
+            captcha: captcha
+        }).done(function (data) {
+            if(data.status !== 200) {
+                $("#submit-reply").removeClass("am-disabled");
+                show_alert("好像哪里有点问题", data.data);
+            } else {
+                var page = Math.ceil((parseInt($("[data-reply-count]").attr('data-reply-count')) + 1) / 10);
+                goto_url('/discuss/'+postID, {page: page})
+            }
+        }).fail(function (xhr) {
+            $("#submit-reply").removeClass("am-disabled");
+            $(".captcha").click();
+            show_alert("好像哪里有点不对", JSON.parse(xhr.responseText).data);
+        });
+    });
+
+	$("[data-fd-username]").click(function () {
+        setEditorVal('@' + $(this).attr("data-fd-username") + ' ');
+	});
+
+    $("[name=report]").click(function () {
+        var reportType = $(this).attr('data-report-type'), reportID = $(this).attr('data-report-id');
+        $('#report').modal({
+            relatedTarget: this,
+            onConfirm: function (e) {
+                var reason = $('[name=reason]').val();
+                var detail = $('[name=content]').val();
+
+                $.post('/api/report/'+reportType, {
+                    relevantID: reportID,
+                    reason: reason + ' ' + detail
+                }, function (data) {
+                    show_alert("提示", data.data);
+                });
+            }
+        });
+    });
+
+    $("[name=delete]").click(function () {
+        if (confirm("确定要删除吗？"))
+            $.ajax({
+                url: '/api/discuss/delete/' + $(this).attr('data-post-id'),
+                type: 'DELETE',
+                success: function (resp) {
+                    if (resp.status === 200)
+                        show_alert("提示", "删除成功");
+                    else
+                        show_alert("提示", resp.data);
+                }
+            })
+    })
+
+    $("[name=delete-reply]").click(function () {
+        if (confirm("确定要删除吗？"))
+            $.ajax({
+                url: '/api/discuss/deleteReply/' + $(this).attr('data-reply-id'),
+                type: 'DELETE',
+                success: function (resp) {
+                    if (resp.status === 200)
+                        show_alert("提示", "删除成功");
+                    else
+                        show_alert("提示", resp.data);
+                }
+            })
+    })
+</script>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="lg-alert">
+<div class="am-modal-dialog">
+<div class="am-modal-hd" id="lg-alert-title"></div>
+<div class="am-modal-bd" id="lg-alert-message"></div>
+<div class="am-modal-footer">
+<span class="am-modal-btn">确定</span>
+</div>
+</div>
+</div>
+<script src="/js/ace/ace.js"></script>
+<script src="https://cdn.luogu.com.cn/js/vendor.js" data-manual></script>
+<script src="https://cdn.luogu.com.cn/js/jsmind.js" data-manual></script>
+<script src="https://cdn.luogu.com.cn/js/amazeui.min.js"></script>
+<script src="https://cdn.luogu.com.cn/js/highcharts.js"></script>
+<script src="https://cdn.luogu.com.cn/js/highcharts-more.js"></script>
+<script src="/static/katex/katex.min.js"></script>
+<script src="/static/katex/contrib/auto-render.min.js"></script>
+<script src="https://cdn.luogu.com.cn/markdown-palettes/markdown-palettes.min.js?ver=20190219"></script>
+<script src="https://cdn.luogu.com.cn/js/luogu3.js?ver=20190724"></script>
+</body>
+</html>

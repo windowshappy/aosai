@@ -1,18 +1,25 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "windows-gcc-x86",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:\\Program Files\\Dev-Cpp\\MinGW32\\lib\\gcc\\mingw32\\4.8.1\\include\\c++\\**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "cStandard": "${default}",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerArgs": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic"
+            ],
+            "compilerPath": "C:\\Program Files\\Dev-Cpp\\MinGW32\\bin\\g++.exe"
         }
     ],
     "version": 4

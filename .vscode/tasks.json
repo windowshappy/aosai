@@ -1,7 +1,8 @@
 {
     "version": "2.0.0",
-    "tasks": [{
-        "type": "shell",
+    "tasks": [
+        {
+            "type": "shell",
             "label": "Compile",
             "command": "g++",
             "args": [
@@ -16,7 +17,6 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            
             "group": {
                 "kind": "build",
                 "isDefault": true
